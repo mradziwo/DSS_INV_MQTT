@@ -6,5 +6,5 @@ services:
     restart: unless-stopped
     network_mode: bridge
     volumes:
-      - /home/containers/inverter/config:/app/config
+      - /home/containers/dssinverter/config:/app/config
 
