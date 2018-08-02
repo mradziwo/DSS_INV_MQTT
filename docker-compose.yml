@@ -1,9 +1,8 @@
 version: "2"
 services:
   INVERTER_MQTT_Gateway:
-    image: mradziwo/isys_inverter_modbus_mqtt_gateway:latest
-    ports:
-      - "1883:1883"
+    image: mradziwo/dss_inv_mqtt
+
     restart: unless-stopped
     network_mode: bridge
     volumes:
