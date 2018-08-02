@@ -1,0 +1,30 @@
+MQTT: 
+  IP: "192.168.20.249"
+  Port: 1883
+  KeepAlive: 60
+  User: ""
+  Password: ""
+  rootPath: "DSS"
+Devices:
+  - IP: "192.168.10.11"
+    Port: 4002
+    SlaveAddress: 1
+    Name: "SALON"
+  - IP: "192.168.10.11"
+    Port: 4002
+    SlaveAddress: 2
+    Name: "SYPIALNIA"
+  - IP: "192.168.10.11"
+    Port: 4002
+    SlaveAddress: 3
+    Name: "NAGRZEWNICA_1"
+  - IP: "192.168.10.11"
+    Port: 4002
+    SlaveAddress: 4
+    Name: "NAGRZEWNICA_2"
+  - IP: "192.168.10.11"
+    Port: 4002
+    SlaveAddress: 5
+    Name: "GOSCINNY"
+Settings:
+  ScanRate: 1

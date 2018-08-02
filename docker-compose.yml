@@ -1,0 +1,11 @@
+version: "2"
+services:
+  INVERTER_MQTT_Gateway:
+    image: mradziwo/isys_inverter_modbus_mqtt_gateway:latest
+    ports:
+      - "1883:1883"
+    restart: unless-stopped
+    network_mode: bridge
+    volumes:
+      - /home/containers/inverter/config:/app/config
+
